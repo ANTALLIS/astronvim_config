@@ -12,15 +12,8 @@ return {
       ensure_installed = {
         "lua_ls",
         -- add more arguments for adding more language servers
-        "assembly",
-        "bash",
-        "c",
-        "cpp",
-        "go",
+        "rust_analyzer",
         "gopls",
-        "rust",
-        "rust_analyser",
-        "zig",
         "zls",
       },
     },
@@ -34,6 +27,7 @@ return {
         "stylua",
         -- add more arguments for adding more null-ls sources
         "assembly",
+        "asmfmt",
         "asm_lsp",
         "c",
         "c++",

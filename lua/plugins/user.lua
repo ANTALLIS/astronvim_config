@@ -82,4 +82,45 @@ return {
       )
     end,
   },
+  {
+    "nvim-lua/plenary.nvim",
+  },
+  {
+    -- https://peps.python.org/pep-0350/
+    -- TODO:
+    -- HACK:
+    -- WARN:
+    -- WARNING:
+    -- PERF:
+    -- NOTE:
+    -- IDEA:
+    -- TEST:
+    -- BUG:
+    -- FIX:
+    -- FIXME:
+    -- XXX:
+    -- PORT:
+    -- SEE/REF:
+    -- REVIEW:
+    -- OPTIMISE:
+    -- DEPRECATED:
+    -- TEMP:
+    -- DEBUG:
+    -- CLEANUP:
+    -- REMOVE:
+    -- SECURITY:
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    -- config = function()
+    --   require("todo-comments").setup {}
+    -- end,
+    opts = {},
+    event = "User AstroFile",
+    -- You can specify one or multiple:
+    -- `User AstroFile` Triggered after opening a file
+    -- `VeryLazy`       Triggered after starting Neovim
+    -- `BufEnter *.lua` Triggered after opening a Lua file
+    -- `InsertEnter`    Triggered after entering insert mode
+    -- `LspAttach`      Triggered after starting LSPs
+  },
 }
