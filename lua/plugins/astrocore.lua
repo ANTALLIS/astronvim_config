@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- AstroCore provides a central place to modify mappings, vim options, autocommands, and more!
 -- Configuration documentation can be found with `:h astrocore`
@@ -43,6 +43,7 @@ return {
     -- NOTE: keycodes follow the casing in the vimdocs. For example, `<Leader>` must be capitalized
     mappings = {
       -- first key is the mode
+      -- `n` is for normal mode
       n = {
         -- second key is the lefthand side of the map
 
@@ -66,7 +67,18 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+
+        -- This mapping will echo text to the screen
+        -- This is equivalent to doing `:echo 'Hello World!' <enter>`
+        -- `<cr>` stands for carridge return
+        ["<Leader>a"] = { "<cmd>echo 'Hello World!'<cr>", desc = "Say hello world" },
       },
+      -- `t` is for terminal mode 
+      t = {},
+      -- `i` is for insert mode
+      i = {},
+      -- `v` is for visual mode 
+      v = {},
     },
   },
 }
